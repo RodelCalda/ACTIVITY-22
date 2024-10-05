@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; 
+    color: #333; 
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF; 
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0056b3; 
+}
+
+.layout-header {
+    background: #007BFF; 
+    color: #fff; 
+    padding: 20px;
+    text-align: center;
+}
+
+.layout-main {
+    padding: 20px;
+    max-width: 800px; 
+    margin: 0 auto;
+}
+
+.layout-footer {
+    background: #343a40; 
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.module-nav {
+    background-color: #0056b3;
+    padding: 15px 0; 
+}
+
+.module-nav ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    justify-content: center; 
+}
+
+.module-nav li {
+    position: relative; 
+    margin: 0 15px; /
+}
+
+.module-nav a {
+    color: #ffffff;
+    font-size: 18px; 
+    transition: color 0.3s;
+}
+
+.module-nav a:hover {
+    color: #ffd700; 
+}
+
+.module-nav .dropdown {
+    display: none; 
+    position: absolute; 
+    background-color: #0056b3; 
+    padding: 10px 0; 
+    z-index: 1000; 
+    margin-top: 5px; 
+    opacity: 0; 
+    transition: opacity 0.3s ease, transform 0.3s ease; 
+    transform: translateY(10px); 
+}
+
+.module-nav li:hover .dropdown {
+    display: block; 
+    opacity: 1; 
+    transform: translateY(0);
+}
+
+.module-nav .dropdown li {
+    width: 200px; 
+}
+
+.module-nav .dropdown a {
+    color: #ffffff; 
+    padding: 10px 15px; 
+    display: block; 
+}
+
+.module-nav .dropdown a:hover {
+    background-color: #ffd700; 
+    color: #333; 
+}
+
+
+.module-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #0bee29; 
+}
+
+.module-card,
+.module-testimonials,
+.module-values,
+.module-cta,
+.module-feedback {
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    padding: 15px;
+    margin: 20px 0;
+    background: #fff; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.module-testimonials {
+    background: #f1f1f1; 
+}
+
+.module-values {
+    background: #e9ecef; 
+}
+
+.module-cta {
+    background: #d1ecf1; 
+    border-left: 5px solid #007BFF;
+}
+
+.module-feedback {
+    background: #d4edda; 
+}
+
+
+@media (max-width: 768px) {
+    .module-title {
+        font-size: 24px; 
+    }
+
+    .layout-main {
+        padding: 10px; 
+    }
+
+    .module-card {
+        padding: 10px; 
+    }
+
+    .module-nav a {
+        font-size: 16px; 
+    }
+}
